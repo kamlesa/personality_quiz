@@ -1,5 +1,5 @@
-.button {
-    background-color: #4CAF50; /* Green */
+.quiz_container button {
+    background-color: #D8791B; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -12,8 +12,8 @@
     border-radius: 12px;
 }
 
-.button:hover {
-    background-color: #45a049;
+.quiz_container button:hover {
+    background-color: #e29344;
 }
 
 .quiz_container{
