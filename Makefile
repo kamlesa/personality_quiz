@@ -1,3 +1,11 @@
+help:
+	@echo 'make help   : Show this message'
+	@echo 'make run    : Start the server'
+	@echo 'make build  : Build the "main" executable in the current directory'
+	@echo 'make clean  : Cleans the Golang workspace'
+	@echo 'make test   : Runs tests'
+	@echo 'make docker : Builds the Docker image and starts a container'
+
 build:
 	go build -o main main.go
 
