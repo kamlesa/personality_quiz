@@ -6,8 +6,9 @@ import (
 )
 
 func main() {
-	http.Handle("/", http.FileServer(http.Dir(".")))
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	filesDirectory := "./resources"
+	fmt.Printf("Using %s as file directory", filesDirectory)
+	if err := http.ListenAndServe(":8080", http.FileServer(http.Dir(filesDirectory))); err != nil {
 		fmt.Println("Uh oh...", err)
 	}
 }
